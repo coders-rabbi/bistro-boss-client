@@ -9,67 +9,74 @@ import slide5 from '../../../../assets/home/slide5.jpg'
 
 import "swiper/css";
 import "swiper/css/pagination";
+import SectionTitle from "../../../SectionTitle/SectionTitle";
 
 const Category = () => {
     return (
-        <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
-            pagination={{
-                clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper mb-12"
-        >
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide2} alt="" />
-                <h3 className="text-center text-3xl text-white -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide3} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={slide1} alt="" />
-                <h3 className="text-center text-black -mt-10">Salad</h3>
-            </SwiperSlide>
-        </Swiper>
+        <section>
+            <SectionTitle
+                subHeading={"From 11.00am to 12.00pm"}
+                heading={"Order Online"}
+            ></SectionTitle>
+            <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                pagination={{
+                    clickable: true,
+                }}
+                modules={[Pagination]}
+                className="mySwiper mb-12"
+            >
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide2} alt="" />
+                    <h3 className="text-center text-3xl text-white -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide3} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={slide1} alt="" />
+                    <h3 className="text-center text-black -mt-10">Salad</h3>
+                </SwiperSlide>
+            </Swiper>
+        </section>
     );
 };
 
