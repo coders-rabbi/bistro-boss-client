@@ -6,17 +6,7 @@ import useMenu from '../Hooks/useMenu';
 const PopularMenu = () => {
     const [menu] = useMenu();
     console.log(menu);
-    const popular = menu.filter(item => item.category === 'popular')
-    // const [menu, setMenu] = useState([]);
-    // useEffect(() => {
-    //     fetch('menu.json')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             const populerItems = data.filter(item => item.category === 'popular')
-    //             // console.log(populerItems);
-    //             setMenu(populerItems)
-    //         })
-    // }, [])
+    const popular = menu.filter(item => item.category === 'popular');
 
 
     return (
@@ -27,9 +17,10 @@ const PopularMenu = () => {
             ></SectionTitle>
             <div className='grid md:grid-cols-2 gap-6'>
                 {
-                    popular.map(popular => <PopularCard
+                    // Popular Card or MenuItem 
+                    popular.map(item => <PopularCard
                         key={popular._id}
-                        popular={popular}
+                        items={item}
                     ></PopularCard>)
                 }
             </div>
