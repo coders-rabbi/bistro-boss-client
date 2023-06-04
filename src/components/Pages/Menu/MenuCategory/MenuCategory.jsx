@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PopularCard from '../../../PopularMenu/PopularCard';
 import Cover from '../../Shared/Cover';
 
@@ -13,6 +14,11 @@ const MenuCategory = ({ items, title, img }) => {
                         items={item}
                     ></PopularCard>)
                 }
+            </div>
+            <div className='flex justify-center'>
+                <Link to="/order">
+                    <button className="btn btn-outline btn-primary border-0 border-b-4 mx-auto">Order Now</button>
+                </Link>
             </div>
         </div>
     );
