@@ -4,8 +4,16 @@ import Cover from "../Shared/Cover";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import OrderTab from "./OrderTab";
+import { useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Order = () => {
+    const categories = ['salad', 'pizza', 'soup', 'dessert', 'drinks']
+    const {category} = useParams();
+    const initialIndex = categories.indexOf(category)
+    console.log(initialIndex);
+    const [tabIndex, setTabIndex] = useState(0);
+
     const [menu] = useMenu();
     const desserts = menu.filter(item => item.category === 'dessert')
     const pizza = menu.filter(item => item.category === 'pizza')
@@ -15,7 +23,9 @@ const Order = () => {
     return (
         <div>
             <Cover img={orderCoverImg} title="Order Food"></Cover>
-            <Tabs>
+            <Tabs
+                defaultIndex={tabIndex}
+                onSelect={(index) => setTabIndex(index)}>
                 <TabList>
                     <Tab>SALAD</Tab>
                     <Tab>PIZZA</Tab>

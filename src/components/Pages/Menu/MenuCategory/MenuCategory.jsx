@@ -15,11 +15,14 @@ const MenuCategory = ({ items, title, img }) => {
                     ></PopularCard>)
                 }
             </div>
-            <div className='flex justify-center'>
-                <Link to="/order">
-                    <button className="btn btn-outline btn-primary border-0 border-b-4 mx-auto">Order Now</button>
-                </Link>
-            </div>
+            {
+                title &&
+                <div className='flex justify-center'>
+                    <Link to={`/order/${title}`}>
+                        <button className="btn btn-outline btn-primary border-0 border-b-4 mx-auto">Order Now</button>
+                    </Link>
+                </div>
+            }
         </div>
     );
 };

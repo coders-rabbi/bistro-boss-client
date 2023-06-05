@@ -1,7 +1,6 @@
 import React from 'react';
 
 const FoodCard = ({ items }) => {
-    console.log(items?.name);
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
             <figure><img src={items?.image} alt="" /></figure>
@@ -10,7 +9,7 @@ const FoodCard = ({ items }) => {
                 <p>{items?.recipe}</p>
                 <p>Price: {items?.price}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    <button className="btn btn-outline btn-primary bg-gray-100 border-0 border-b-4 mx-auto">Buy Now</button>
                 </div>
             </div>
         </div>
